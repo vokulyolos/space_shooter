@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Space Shooter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<canvas id="game" width="600" height="600">This element is not supported</canvas>
+		<div id="info">
+			<p>Lives: <span id="lives">`${lives}`</span></p>
+			<p>Score: <span id="score">0</span></p>
+			<p>Time: <span id="time">0</span></p>
+		</div>
+	</div>
+
+<script src="js/watch.js" async></script>
+<script src="js/game.js"></script>
+<script>
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            pauseGame(); 
+        }
+    });
+
+    function pauseGame() {
+
+        alert("Game Paused"); 
+    }
+</script>
+</body>
+</html>
